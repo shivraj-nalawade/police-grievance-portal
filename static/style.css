@@ -124,3 +124,69 @@ tr:hover {
 .urgency.high { color: red; }
 .urgency.medium { color: orange; }
 .urgency.low { color: green; }
+
+/* Homepage layout with officer image */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;  /* make image & form same height */
+    gap: 50px;
+    max-width: 1200px;     /* bigger overall container */
+    margin: 50px auto;
+}
+
+/* Officer image */
+.officer-image img {
+    max-width: 450px;      /* bigger image */
+    height: 100%;          /* match form height */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    object-fit: cover;
+}
+
+/* Homepage layout with officer image */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;  /* make image & form same height */
+    gap: 50px;
+    max-width: 1200px;     /* bigger overall container */
+    margin: 50px auto;
+}
+
+/* Officer image */
+.officer-image img {
+    max-width: 450px;      /* bigger image */
+    height: 100%;          /* match form height */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    object-fit: cover;
+}
+
+/* Form container updated */
+.form-container {
+    flex: 1; /* take remaining space */
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Inputs & labels bigger for professional feel */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+input, textarea {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.btn-submit, .btn-view {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
