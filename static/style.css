@@ -1,0 +1,126 @@
+/* Background */
+body::before {
+    content: "";
+    background: url("background.png") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.35; /* Slightly darker */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222;
+}
+
+/* Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #00224d, #004080);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo {
+    height: 70px;
+    margin-right: 15px;
+}
+
+.title-text h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.tagline {
+    margin: 2px 0 0;
+    font-style: italic;
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+/* Form & Container */
+.form-container, .complaints-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+.btn-submit, .btn-view, .btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-submit:hover, .btn-view:hover, .btn-back:hover {
+    background: #00224d;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #004080;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Highlight entire rows based on urgency */
+tr.high { background-color: rgba(255, 0, 0, 0.15); }
+tr.medium { background-color: rgba(255, 165, 0, 0.15); }
+tr.low { background-color: rgba(0, 128, 0, 0.15); }
+
+tr:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+/* Urgency text styling */
+.urgency {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.urgency.high { color: red; }
+.urgency.medium { color: orange; }
+.urgency.low { color: green; }

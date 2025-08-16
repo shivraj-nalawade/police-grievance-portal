@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Police Station Grievance App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="app-header">
+        <img src="{{ url_for('static', filename='maharashtra_police_logo.png') }}" class="logo">
+        <div class="title-text">
+            <h1>Police Station Grievance App</h1>
+            <p class="tagline">Your safety, our responsibility</p>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Submit a Complaint</h2>
+        <form action="{{ url_for('submit_complaint') }}" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" required>
+
+            <label for="contact">Contact Number</label>
+            <input type="text" name="contact" required>
+
+            <label for="complaint">Complaint</label>
+            <textarea name="complaint" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Submit Complaint</button>
+        </form>
+        <a href="{{ url_for('view_complaints') }}" class="btn-view">View Complaints</a>
+    </div>
+</body>
+</html>

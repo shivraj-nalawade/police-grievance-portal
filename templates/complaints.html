@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint List - Police Station Grievance App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="app-header">
+        <img src="{{ url_for('static', filename='maharashtra_police_logo.png') }}" class="logo">
+        <div class="title-text">
+            <h1>Police Station Grievance App</h1>
+            <p class="tagline">Your safety, our responsibility</p>
+        </div>
+    </header>
+
+    <div class="complaints-container">
+        <h2>{{ complaints|length }} Complaint(s)</h2>
+        <a href="{{ url_for('index') }}" class="btn-back">← Submit new complaint</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Complaint</th>
+                    <th>Urgency</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for id, name, contact, complaint, urgency in complaints %}
+                <tr class="{{ urgency|lower }}">
+                    <td>{{ id }}</td>
+                    <td>{{ name }}</td>
+                    <td>{{ contact }}</td>
+                    <td>{{ complaint }}</td>
+                    <td class="urgency {{ urgency|lower }}">{{ urgency }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
