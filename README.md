@@ -8,7 +8,7 @@ The system automatically classifies complaints into **High**, **Medium**, or **L
 ## 👨‍💻 Project Contributors  
 
 - **Shivraj Nalawade** (PRN: 202301060008)  
-- **Atharva Rajandekar** (PRN: 202301060007)  
+- **Atharva Rajandekar** (PRN: 202301060027)  
 
 ---
 
@@ -38,7 +38,7 @@ Create a **mobile or web application** that enables citizens to:
 ## 🛠️ Tech Stack  
 
 - **Backend:** Python, Flask  
-- **Frontend:** HTML5, CSS3, Jinja2 (templating)  
+- **Frontend:** HTML5, CSS3,  
 - **Database:** SQLite  
 - **Version Control:** Git & GitHub  
 
