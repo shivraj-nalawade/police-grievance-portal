@@ -48,7 +48,7 @@ Create a **mobile or web application** that enables citizens to:
 Follow these steps to run the project locally in **VS Code**:
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone <repo-link>
 cd police-station-grievance-app
 
