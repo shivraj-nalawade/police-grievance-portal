@@ -38,9 +38,39 @@ Create a **mobile or web application** that enables citizens to:
 ## 🛠️ Tech Stack  
 
 - **Backend:** Python, Flask  
-- **Frontend:** HTML5, CSS3,  
+- **Frontend:** HTML5, CSS3 
 - **Database:** SQLite  
 - **Version Control:** Git & GitHub  
+
+---
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally in **VS Code**:
+
+### 1️⃣ Clone the Repository
+```bash
+git clone <repo-link>
+cd police-station-grievance-app
+
+### 2️⃣ Create Virtual Environment
+python -m venv venv
+
+Activate it:
+Windows (PowerShell): venv\Scripts\activate
+
+Linux/Mac: source venv/bin/activate
+
+
+### 3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+
+### 4️⃣ Run the Flask Application
+python app.py
+
+### 5️⃣ Access the App
+Open browser and go to:
+👉 http://127.0.0.1:5000/
 
 ---
 
@@ -54,3 +84,9 @@ Create a **mobile or web application** that enables citizens to:
 
 ---
 
+## 📂 Project Links
+- 📂 **GitHub Repository:** [https://github.com/shivraj-nalawade/police-grievance-portal]  
+- 🎥 **Demonstration Video:** [https://youtu.be/7wVOXimdmHg] 
+- 🌐 **Working Demo Website:** [https://police-grievance-portal.onrender.com]
+
+---
