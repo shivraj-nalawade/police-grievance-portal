@@ -49,28 +49,36 @@ Follow these steps to run the project locally in **VS Code**:
 
 ### 1️⃣ Clone the Repository
 
-git clone <repo-link>
+```bash
+git clone <repo-url>
 cd police-station-grievance-app
+```
 
 ### 2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
 
 Activate it:
 Windows (PowerShell): venv\Scripts\activate
 
 Linux/Mac: source venv/bin/activate
-
+```
 
 ### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 4️⃣ Run the Flask Application
+```bash
 python app.py
+```
 
 ### 5️⃣ Access the App
+```bash
 Open browser and go to:
 👉 http://127.0.0.1:5000/
+```
 
 ---
 
