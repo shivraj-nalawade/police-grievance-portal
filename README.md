@@ -95,6 +95,5 @@ Open browser and go to:
 ## 📂 Project Links
 - 📂 **GitHub Repository:** [https://github.com/shivraj-nalawade/police-grievance-portal]  
 - 🎥 **Demonstration Video:** [https://youtu.be/7wVOXimdmHg] 
-- 🌐 **Working Demo Website:** [https://police-grievance-portal.onrender.com]
 
 ---
